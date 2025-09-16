@@ -1,1 +1,107 @@
-/* your code here */
+/* Footer Container */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Content Wrapper */
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Top Section: Logo + Icons */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.logo-details .logo_name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Social Media Icons */
+.media-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.media-icons a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.media-icons a:hover {
+  color: #00aced;
+}
+
+/* Link Sections Side by Side */
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.box {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.main-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.link-name {
+  list-style: none;
+  margin: 6px 0;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.link-name:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Bottom Footer Note */
+.bottom-details {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .media-icons {
+    margin-top: 15px;
+  }
+}
